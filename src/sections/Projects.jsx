@@ -46,6 +46,30 @@ const projects = [
 
     highlight: "80%+ classification accuracy",
   },
+  
+  {
+    title: "AI Lead Enrichment Platform",
+
+    description:
+      "AI-powered automation platform that scrapes company websites, generates personalized business audits using LLMs, creates downloadable PDF reports, and automates email outreach workflows.",
+  
+    image: "/assets/projects/AI-lead.png",
+
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "OpenRouter",
+      "Tailwind CSS",
+      "Resend",
+      "Cheerio",
+    ],
+
+    github: "https://github.com/Chandrika987/Simplifiq-ai-assessment",
+
+    live: "https://simplifiq-ai-assessment.vercel.app/",
+
+    highlight: "Modern full-stack Next.js architecture",
+  },
 
   {
     title: "ConsentLens",
