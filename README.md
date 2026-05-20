@@ -8,7 +8,7 @@ Built with a futuristic UI inspired by modern developer aesthetics and smooth in
 
 # 🌐 Live Demo
 
-[View Portfolio](https://your-portfolio-link.vercel.app)
+[View Portfolio](https://chandrika-portfolio-five.vercel.app/)
 
 ---
 
