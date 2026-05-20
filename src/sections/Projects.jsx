@@ -19,9 +19,11 @@ const projects = [
     github:
       "https://github.com/Chandrika987/Smart_Irrigation",
 
-    live: "https://smartirrigation-vkwxvp488mdduptgmjrhbt.streamlit.app/",
+    live:
+      "https://smartirrigation-vkwxvp488mdduptgmjrhbt.streamlit.app/",
 
-    highlight: "15–25% estimated water optimization",
+    highlight:
+      "15–25% estimated water optimization",
   },
 
   {
@@ -44,15 +46,16 @@ const projects = [
 
     live: "",
 
-    highlight: "80%+ classification accuracy",
+    highlight:
+      "80%+ classification accuracy",
   },
-  
+
   {
     title: "AI Lead Enrichment Platform",
 
     description:
       "AI-powered automation platform that scrapes company websites, generates personalized business audits using LLMs, creates downloadable PDF reports, and automates email outreach workflows.",
-  
+
     image: "/assets/projects/AI-lead.png",
 
     tech: [
@@ -64,11 +67,14 @@ const projects = [
       "Cheerio",
     ],
 
-    github: "https://github.com/Chandrika987/Simplifiq-ai-assessment",
+    github:
+      "https://github.com/Chandrika987/Simplifiq-ai-assessment",
 
-    live: "https://simplifiq-ai-assessment.vercel.app/",
+    live:
+      "https://simplifiq-ai-assessment.vercel.app/",
 
-    highlight: "Modern full-stack Next.js architecture",
+    highlight:
+      "Modern full-stack Next.js architecture",
   },
 
   {
@@ -90,88 +96,158 @@ const projects = [
 
     live: "",
 
-    highlight: "Secure full-stack architecture",
+    highlight:
+      "Secure full-stack architecture",
   },
 
   {
-  title: "Campus Navigator",
+    title: "Campus Navigator",
 
-  description:
-    "Frontend-based campus navigation application using interactive maps and route visualization for easier campus exploration.",
+    description:
+      "Frontend-based campus navigation application using interactive maps and route visualization for easier campus exploration.",
 
-  image: "/assets/projects/campus-navigator.png",
+    image:
+      "/assets/projects/campus-navigator.png",
 
-  tech: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Leaflet.js",
-    "OpenStreetMap",
-  ],
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Leaflet.js",
+      "OpenStreetMap",
+    ],
 
-  github: "https://github.com/Chandrika987/campus-navigator",
+    github:
+      "https://github.com/Chandrika987/campus-navigator",
 
-  live: "https://campus-navigator-deploy.vercel.app/",
+    live:
+      "https://campus-navigator-deploy.vercel.app/",
 
-  highlight: "Interactive map-based navigation system",
-},
+    highlight:
+      "Interactive map-based navigation system",
+  },
 ];
 
 function Projects() {
+
   return (
+
     <section
       id="projects"
-      className="relative z-10 min-h-screen px-6 md:px-16 py-32 text-white"
+
+      className="
+        relative
+        z-10
+
+        py-32
+
+        text-white
+        overflow-hidden
+      "
     >
 
-      <div className="max-w-7xl mx-auto">
+      <div className="px-6 md:px-16">
 
         {/* Heading */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+
+          transition={{
+            duration: 0.8,
+          }}
+
           viewport={{ once: true }}
-          className="text-5xl md:text-6xl font-bold mb-20"
+
+          className="
+            text-5xl
+            md:text-6xl
+            font-bold
+            mb-20
+          "
         >
           Projects
         </motion.h1>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        {/* Horizontal Scroll */}
+        <div
+          className="
+            flex
+            gap-8
+
+            overflow-x-auto
+
+            pb-6
+
+            snap-x
+            snap-mandatory
+
+            scrollbar-hide
+          "
+        >
 
           {projects.map((project, index) => (
 
             <motion.div
               key={index}
 
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{
+                opacity: 0,
+                y: 40,
+              }}
+
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
 
               transition={{
                 duration: 0.7,
-                delay: index * 0.15,
+                delay: index * 0.1,
               }}
 
               viewport={{ once: true }}
 
               whileHover={{
-                y: -8,
+                y: -10,
               }}
 
               className="
+                snap-center
+
+                min-w-[320px]
+                max-w-[320px]
+
+                md:min-w-[360px]
+                md:max-w-[360px]
+
+                flex-shrink-0
+
                 group
                 flex
                 flex-col
-                h-full
+
                 backdrop-blur-md
                 bg-white/10
+
                 border
                 border-cyan-300/10
+
                 rounded-3xl
                 overflow-hidden
+
                 shadow-2xl
+
                 hover:border-cyan-300/30
+
                 transition
                 duration-300
               "
@@ -182,13 +258,18 @@ function Projects() {
 
                 <img
                   src={project.image}
+
                   alt={project.title}
+
                   className="
                     w-full
                     h-[220px]
+
                     object-cover
+
                     transition
                     duration-500
+
                     group-hover:scale-105
                   "
                 />
@@ -196,10 +277,16 @@ function Projects() {
               </div>
 
               {/* Content */}
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-7 flex flex-col flex-1">
 
                 {/* Title */}
-                <h2 className="text-2xl font-semibold text-cyan-300">
+                <h2
+                  className="
+                    text-2xl
+                    font-semibold
+                    text-cyan-300
+                  "
+                >
                   {project.title}
                 </h2>
 
@@ -209,51 +296,87 @@ function Projects() {
                 </p>
 
                 {/* Description */}
-                <p className="mt-5 text-gray-200 leading-relaxed">
+                <p
+                  className="
+                    mt-5
+                    text-gray-200
+                    leading-relaxed
+                    text-sm
+                  "
+                >
                   {project.description}
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-3 mt-8">
+                <div
+                  className="
+                    flex
+                    flex-wrap
+                    gap-3
+                    mt-7
+                  "
+                >
 
                   {project.tech.map((item, i) => (
+
                     <div
                       key={i}
+
                       className="
                         px-4
                         py-2
+
                         rounded-2xl
+
                         bg-cyan-400/10
+
                         border
                         border-cyan-300/20
+
                         text-cyan-100
-                        text-sm
+                        text-xs
                       "
                     >
                       {item}
                     </div>
+
                   ))}
 
                 </div>
 
                 {/* Buttons */}
-                <div className="flex gap-4 mt-auto pt-10">
+                <div
+                  className="
+                    flex
+                    gap-4
 
-                  {/* GitHub Button */}
+                    mt-auto
+                    pt-10
+                  "
+                >
+
+                  {/* GitHub */}
                   {project.github ? (
 
                     <a
                       href={project.github}
+
                       target="_blank"
                       rel="noopener noreferrer"
+
                       className="
-                        px-6
+                        px-5
                         py-3
+
                         rounded-2xl
+
                         bg-cyan-400/20
+
                         border
                         border-cyan-300
+
                         hover:bg-cyan-300/30
+
                         transition
                       "
                     >
@@ -264,12 +387,16 @@ function Projects() {
 
                     <button
                       className="
-                        px-6
+                        px-5
                         py-3
+
                         rounded-2xl
+
                         bg-cyan-400/10
+
                         border
                         border-cyan-300/20
+
                         opacity-50
                         cursor-not-allowed
                       "
@@ -279,20 +406,26 @@ function Projects() {
 
                   )}
 
-                  {/* Live Demo Button */}
+                  {/* Live Demo */}
                   {project.live ? (
 
                     <a
                       href={project.live}
+
                       target="_blank"
                       rel="noopener noreferrer"
+
                       className="
-                        px-6
+                        px-5
                         py-3
+
                         rounded-2xl
+
                         border
                         border-white/20
+
                         hover:bg-white/10
+
                         transition
                       "
                     >
@@ -303,11 +436,14 @@ function Projects() {
 
                     <button
                       className="
-                        px-6
+                        px-5
                         py-3
+
                         rounded-2xl
+
                         border
                         border-white/10
+
                         opacity-50
                         cursor-not-allowed
                       "
