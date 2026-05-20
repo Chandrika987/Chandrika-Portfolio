@@ -1,16 +1,64 @@
-# React + Vite
+# 🚀 Chandrika Pala — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern developer portfolio showcasing projects, technical skills, certifications, open-source contributions, and professional experience.
 
-Currently, two official plugins are available:
+Built with a futuristic UI inspired by modern developer aesthetics and smooth interactive animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View Portfolio](https://your-portfolio-link.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# ✨ Features
+
+- Modern futuristic UI
+- Fully responsive design
+- Smooth animations and transitions
+- Interactive hover effects
+- Open Source badges showcase
+- Categorized certifications section
+- Live project demos
+- GitHub integration
+- Resume preview & download
+- Custom cursor glow effect
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Frontend | React.js, Vite, Tailwind CSS, Framer Motion |
+| Deployment | Vercel |
+| Version Control | Git, GitHub |
+
+
+# 🏆 Open Source Contributions
+
+Actively contributing to open-source programs and community-driven initiatives through technical contributions and collaborative development.
+
+---
+
+# 📜 Certifications
+
+### Internship Certifications
+- Data Science & AI Internship
+- AI & Cloud Foundations Internship
+- MERN Stack Internship
+- Google Android Developer Internship
+
+### Coursework Certifications
+- AI/ML
+- Web Development
+- Cloud Technologies
+
+### Hackathons & Participations
+- Technical Events
+- Open Source Programs
+- Community Contributions
+
+---
+
