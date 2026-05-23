@@ -48,7 +48,7 @@ Actively contributing to open-source programs and community-driven initiatives t
 - Data Science & AI Internship
 - AI & Cloud Foundations Internship
 - MERN Stack Internship
-- Google Android Developer Internship
+
 
 ### Coursework Certifications
 - AI/ML
